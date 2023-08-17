@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>receiveData</servlet-name>
+        <servlet-class>Controllers.receiveData</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterData</servlet-name>
+        <servlet-class>Controllers.RegisterData</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>registerData</servlet-name>
+        <servlet-class>Controllers.registerData</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>receiveData</servlet-name>
+        <url-pattern>/receiveData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterData</servlet-name>
+        <url-pattern>/RegisterData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registerData</servlet-name>
+        <url-pattern>/registerData</url-pattern>
+    </servlet-mapping>
+</web-app>
